@@ -1,0 +1,82 @@
+{
+    "description": "项目配置文件",
+    "packOptions": {
+        "ignore": [
+            {
+                "type": "file",
+                "value": ".eslintrc.js"
+            }
+        ]
+    },
+    "setting": {
+        "urlCheck": false,
+        "es6": true,
+        "enhance": true,
+        "postcss": true,
+        "preloadBackgroundData": false,
+        "minified": true,
+        "newFeature": false,
+        "coverView": true,
+        "nodeModules": false,
+        "autoAudits": false,
+        "showShadowRootInWxmlPanel": true,
+        "scopeDataCheck": false,
+        "uglifyFileName": false,
+        "checkInvalidKey": true,
+        "checkSiteMap": true,
+        "uploadWithSourceMap": true,
+        "compileHotReLoad": false,
+        "lazyloadPlaceholderEnable": false,
+        "useMultiFrameRuntime": true,
+        "useApiHook": true,
+        "useApiHostProcess": true,
+        "babelSetting": {
+            "ignore": [],
+            "disablePlugins": [],
+            "outputPath": ""
+        },
+        "useIsolateContext": true,
+        "userConfirmedBundleSwitch": false,
+        "packNpmManually": false,
+        "packNpmRelationList": [],
+        "minifyWXSS": true,
+        "disableUseStrict": false,
+        "minifyWXML": true,
+        "showES6CompileOption": false,
+        "useCompilerPlugins": false,
+        "ignoreUploadUnusedFiles": true
+    },
+    "compileType": "miniprogram",
+    "libVersion": "2.19.4",
+    "appid": "wx2aaf6a046a65ad7d",
+    "projectname": "%E6%88%98%E5%8A%9B%E6%9F%A5%E8%AF%A2",
+    "debugOptions": {
+        "hidedInDevtools": []
+    },
+    "scripts": {},
+    "staticServerOptions": {
+        "baseURL": "",
+        "servePath": ""
+    },
+    "isGameTourist": false,
+    "condition": {
+        "search": {
+            "list": []
+        },
+        "conversation": {
+            "list": []
+        },
+        "game": {
+            "list": []
+        },
+        "plugin": {
+            "list": []
+        },
+        "gamePlugin": {
+            "list": []
+        },
+        "miniprogram": {
+            "list": []
+        }
+    }
+}

@@ -1,0 +1,59 @@
+<cu-custom bgColor="bg-gradual-pink" isBack="{{flase}}">
+  <!-- <view slot="backText">返回</view> -->
+  <view slot="content">战力查询系统</view>
+</cu-custom>
+<view class="cu-bar bg-white search fixed" style="top:{{CustomBar}}px; ">
+  <view class="search-form round">
+    <text class="cuIcon-search"></text>
+    <input type="text" placeholder="搜索英雄名" confirm-type="search" bindinput="searchIcon"></input>
+  </view>
+</view>
+<!-- 区服 -->
+<view class="cu-bar bg-white search fixed" style="top:auto">
+  <scroll-view scroll-x class="bg-white nav">
+    <view class="flex text-center">
+      <view class="cu-item flex-sub {{index==TabCur?'text-orange cur':''}} " wx:for="{{services}}" wx:key="value" bindtap="tabSelect" data-id="{{index}}">
+        {{item.zh}}
+      </view>
+    </view>
+  </scroll-view>
+</view>
+<!-- 左右滑动 -->
+<swiper class="bg-white " style="margin-top: 100rpx;height:{{clientHeight?clientHeight+'px':'auto'}}" bindchange='tabSelect' data-id="{{current}}" current="{{TabCur}}">
+  <block wx:for="{{4}}" wx:key="swiperkey">
+    <swiper-item>
+      <scroll-view scroll-y="{{true}}" style="height: {{clientHeight?clientHeight+'px':'auto'}}" scroll-top="{{tops}}">
+        <view class="cu-list  grid col-4 grid-square">
+          <block wx:for="{{pictures}}" wx:key="index" wx:if="{{item.isShow}}">
+            <view style="text-align: center;margin-top: 10px;">
+              <view bindtap="showModal" data-target="Modal" class="cu-avatar radius xl margin-left " style='background-image:url("{{item.url}}");' data-name="{{item.name}}"></view>
+              <view class="margin-left" style="font-size: 13px;">{{item.name}}</view>
+            </view>
+          </block>
+        </view>
+      </scroll-view>
+    </swiper-item>
+  </block>
+</swiper>
+<!-- 获取延时手动获取 -->
+<!-- <view class="cu-bar bg-white">
+  <view class="action">
+    <text class="cuIcon-title text-orange "></text> 获取数据
+  </view>
+  <view class="action">
+    <button class="cu-btn bg-green shadow" bindtap="getpic" data-target="Modal">Modal</button>
+  </view>
+</view> -->
+<view class="cu-modal {{modalName=='Modal'?'show':''}}">
+  <view class="cu-dialog">
+    <view class="cu-bar bg-white justify-end">
+      <view class="content">{{modalmsg.title}}</view>
+      <view class="action" bindtap="hideModal">
+        <text class="cuIcon-close text-red"></text>
+      </view>
+    </view>
+    <view class="padding-xl">
+      <text>{{modalmsg.msg}}</text>
+    </view>
+  </view>
+</view>

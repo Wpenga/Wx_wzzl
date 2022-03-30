@@ -1,0 +1,26 @@
+.grid.col-4.grid-square>view {
+    padding-bottom: calc((100% - 105rpx)/4);
+    height: 0px;
+    width: calc((100% - 60rpx)/4);
+}
+
+.flex {
+    display: flex;
+    justify-content: space-around;
+}
+
+page {
+    padding-top: 100rpx;
+}
+
+item.none {
+    display: none;
+}
+
+.grid.grid-square>view {
+    margin-right: 10rpx;
+    /* margin-bottom: 20rpx; */
+    border-radius: 6rpx;
+    position: relative;
+    overflow: hidden;
+}
