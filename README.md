@@ -1,7 +1,9 @@
 # 【微信小程序】查询王者战力，支持4个区
 ##成品图
+
 ![image](https://cdn.jsdelivr.net/gh/Wpenga/image@main/20220330212352.png)
-![image](https://cdn.jsdelivr.net/gh/Wpenga/image@main/20220330212503.png)
+
+![image](https://cdn.jsdelivr.net/gh/Wpenga/image@main/20220330212503.png){:height="50%" width="50%"}
 ![image](https://cdn.jsdelivr.net/gh/Wpenga/image@main/20220330212549.png)
 ### 框架
 [ColourUi](https://github.com/weilanwl/ColorUI)
