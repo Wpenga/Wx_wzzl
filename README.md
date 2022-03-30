@@ -2,7 +2,9 @@
 ## 成品图
 
 ![image](https://cdn.jsdelivr.net/gh/Wpenga/image@main/20220330212352.png)
-<img src="https://cdn.jsdelivr.net/gh/Wpenga/image@main/20220330212352.png" width = "200" height = "300" alt="页面1" align=center />
+<img src="https://cdn.jsdelivr.net/gh/Wpenga/image@main/20220330212352.png"  alt="页面1" align=center />
+<img src="https://cdn.jsdelivr.net/gh/Wpenga/image@main/20220330212352.png"  alt="页面1" align=center />
+<img src="https://cdn.jsdelivr.net/gh/Wpenga/image@main/20220330212352.png"  alt="页面1" align=center />
 ![image](https://cdn.jsdelivr.net/gh/Wpenga/image@main/20220330212503.png)
 ![image](https://cdn.jsdelivr.net/gh/Wpenga/image@main/20220330212549.png)
 ### 框架
