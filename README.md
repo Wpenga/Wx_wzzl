@@ -7,4 +7,4 @@
 ### 框架
 [ColourUi](https://github.com/weilanwl/ColorUI)
 ### 王者战力api
-[王者战力接口文档-](https://easydoc.net/doc/38736049/S8dOlPmx/vuPe1s2G)
+[王者战力接口文档](https://easydoc.net/doc/38736049/S8dOlPmx/vuPe1s2G)
