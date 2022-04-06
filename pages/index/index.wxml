@@ -28,7 +28,7 @@
         <!-- 英雄列表 -->
           <block wx:for="{{pictures}}" wx:key="index" wx:if="{{item.isShow}}">
             <view style="text-align: center;margin-top: 10px;">
-              <view bindtap="showModal" data-target="Modal" class="cu-avatar radius xl margin-left " style='background-image:url("{{item.url}}");' data-name="{{item.name}}"></view>
+              <view bindtap="showModal" data-target="DialogModal1" class="cu-avatar radius xl margin-left " style='background-image:url("{{item.url}}");' data-name="{{item.name}}"></view>
               <view class="margin-left" style="font-size: 13px;">{{item.name}}</view>
             </view>
           </block>
@@ -57,6 +57,27 @@
     </view>
     <view class="padding-xl">
       <text>{{modalmsg.msg}}</text>
+    </view>
+  </view>
+</view>
+<!-- 复制功能 -->
+<view class="cu-modal {{modalName=='DialogModal1'?'show':''}}">
+  <view class="cu-dialog">
+    <view class="cu-bar bg-white justify-end">
+      <view class="content">{{modalmsg.title}}</view>
+      <view class="action" bindtap="hideModal">
+        <text class="cuIcon-close text-red"></text>
+      </view>
+    </view>
+    <view class="padding-xl">
+      <text>{{modalmsg.msg}}</text>
+    </view>
+    <view class="cu-bar bg-white justify-end">
+      <view class="action">
+        <button class="cu-btn line-green text-green" bindtap="hideModal" data-type='1'>取消</button>
+        <button class="cu-btn bg-green margin-left" bindtap="hideModal" data-type='2'>复制</button>
+
+      </view>
     </view>
   </view>
 </view>

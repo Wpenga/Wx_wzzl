@@ -103,6 +103,23 @@ Page({
   },
   //关闭弹窗
   hideModal(e) {
+    if(e.currentTarget.dataset.type==2){
+      let clip_data=msg.title+'\n'+msg.msg
+      wx.setClipboardData({
+        data: clip_data?clip_data:'请重试',
+        success (res) {
+          wx.getClipboardData({
+            success (res) {
+              // console.log(res.data) // data
+              wx.showToast({
+                title: '已复制到粘贴板',
+                icon:"none"
+              })
+            }
+          })
+        }
+      })
+    }
     this.setData({
       modalName: null
     })
