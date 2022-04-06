@@ -2,6 +2,7 @@
   <!-- <view slot="backText">返回</view> -->
   <view slot="content">战力查询系统</view>
 </cu-custom>
+<!-- 搜索框 -->
 <view class="cu-bar bg-white search fixed" style="top:{{CustomBar}}px; ">
   <view class="search-form round">
     <text class="cuIcon-search"></text>
@@ -18,12 +19,13 @@
     </view>
   </scroll-view>
 </view>
-<!-- 左右滑动 -->
+<!-- 左右滑动-->
 <swiper class="bg-white " style="margin-top: 100rpx;height:{{clientHeight?clientHeight+'px':'auto'}}" bindchange='tabSelect' data-id="{{current}}" current="{{TabCur}}">
   <block wx:for="{{4}}" wx:key="swiperkey">
     <swiper-item>
       <scroll-view scroll-y="{{true}}" style="height: {{clientHeight?clientHeight+'px':'auto'}}" scroll-top="{{tops}}">
         <view class="cu-list  grid col-4 grid-square">
+        <!-- 英雄列表 -->
           <block wx:for="{{pictures}}" wx:key="index" wx:if="{{item.isShow}}">
             <view style="text-align: center;margin-top: 10px;">
               <view bindtap="showModal" data-target="Modal" class="cu-avatar radius xl margin-left " style='background-image:url("{{item.url}}");' data-name="{{item.name}}"></view>
@@ -36,14 +38,15 @@
   </block>
 </swiper>
 <!-- 获取延时手动获取 -->
-<!-- <view class="cu-bar bg-white">
+<view class="cu-bar bg-white">
   <view class="action">
     <text class="cuIcon-title text-orange "></text> 获取数据
   </view>
   <view class="action">
-    <button class="cu-btn bg-green shadow" bindtap="getpic" data-target="Modal">Modal</button>
+    <button class="cu-btn bg-green shadow" bindtap="getpic" data-target="Modal">点击</button>
   </view>
-</view> -->
+</view>
+<!-- 弹窗 -->
 <view class="cu-modal {{modalName=='Modal'?'show':''}}">
   <view class="cu-dialog">
     <view class="cu-bar bg-white justify-end">

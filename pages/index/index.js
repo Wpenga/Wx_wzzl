@@ -78,10 +78,6 @@ Page({
   },
   //手动获取
   getpic() {
-    wx.showLoading({
-      title: '获取中',
-      duration: 200//持续的时间
-    })
     var that = this
     console.log('初始化')
     pictures = heroslist.getheros()
@@ -93,14 +89,10 @@ Page({
       console.log('初始化结束')
     }, 500);
   },
-  //开启弹窗
+  //开启弹窗，显示英雄数据
   showModal(e) {
     nowname = e.currentTarget.dataset.name
     msg = heroslist.getzl(nowname, nowtype)
-    wx.showLoading({
-      title: '获取中',
-      duration: 200//持续的时间
-    })
     var that = this
     setTimeout(() => {
       that.setData({
@@ -135,7 +127,7 @@ Page({
         pictures: pictures
       })
       console.log('初始化结束')
-    }, 500);
+    }, 1000);
   },
   //分享
   onShareAppMessage: function (res) {
