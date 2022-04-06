@@ -2,7 +2,7 @@
 ## 成品图
 
 ![image](https://cdn.jsdelivr.net/gh/Wpenga/image@main/20220330212352.png)
-![image](https://cdn.jsdelivr.net/gh/Wpenga/image@main/20220330212503.png)
+![image](https://cdn.jsdelivr.net/gh/Wpenga/image@main/20220406130634.png)
 ![image](https://cdn.jsdelivr.net/gh/Wpenga/image@main/20220330212549.png)
 ## 小程序码
 ![image](https://cdn.jsdelivr.net/gh/Wpenga/image@main/20220406123111.png)
